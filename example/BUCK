@@ -1,0 +1,9 @@
+cxx_binary(
+  name = 'sum',
+  srcs = [
+    'circular_buffer_sum_example.cpp',
+  ],
+  deps = [
+    '//:circular-buffer',
+  ],
+)
