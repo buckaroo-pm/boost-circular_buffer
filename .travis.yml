@@ -15,7 +15,7 @@ os:
   - osx
 
 env:
-  - BUCKAROO_VERSION=buckaroo-redux-alpha-16
+  - BUCKAROO_VERSION=v2.0.0
 
 cache:
   directories:
@@ -29,5 +29,4 @@ before_install:
 
 script:
   - ./bin/buckaroo install
-  - ./bin/buck build -c ui.superconsole=DISABLED //:circular-buffer
-  - ./bin/buck run -c ui.superconsole=DISABLED //example:sum
+  - ./bin/buck build -c ui.superconsole=DISABLED //:circular_buffer
